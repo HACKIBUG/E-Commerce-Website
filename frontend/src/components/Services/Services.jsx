@@ -31,7 +31,7 @@ const ServiceData=[
 const Services = () => {
   return (
     <div>
-      <div className="container mt-14 md:mt-20">
+      <div className="container my-14 md:my-20">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
             {
                 ServiceData.map((data)=>(
