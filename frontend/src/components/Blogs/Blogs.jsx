@@ -29,7 +29,7 @@ const BlogData=[
 
 const Blogs = () => {
   return (
-    <div className='py-12'>
+    <div className='my-12'>
         <div className='container'>
       <Heading title='Recent News Feed' subtitle={'Explore Our Blogs'}></Heading>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7'>
@@ -41,7 +41,7 @@ const Blogs = () => {
                     </div>
                     <div className='space-y-2'>
                         <p className='text-xs text-gray-500 '>{data.published}</p>
-                        <p className='font-bold line-clamp-1'>{data.title}</p>
+                        <p className='font-bold line-clamp-1 dark:text-white'>{data.title}</p>
                         <p className='text-sm line-clamp-2 text-gray-700 dark:text-gray-400'>{data.subtitle}</p>
                     </div>
                 </div>

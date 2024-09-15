@@ -3,6 +3,11 @@ import {IoMdSearch} from 'react-icons/io'
 import {FaCartShopping} from 'react-icons/fa6'
 import DarkMode from './DarkMode'
 import { FaCaretDown } from "react-icons/fa";
+import { ChevronRight } from "lucide-react";
+
+ 
+import { cn } from "@/lib/utils";
+import AnimatedGradientText from "../magicui/animated-gradient-text";
 
 const MenuLinks=[
   {
@@ -49,9 +54,9 @@ const Navbar = () => {
       <div className='py-5'>
       <div className="container flex justify-between items-center">
         <div className='flex gap-4 items-center'>
-          <a href="#" className='text-primary font-semibold tracking-wider text-2xl uppercase sm:text-3xl p-3'>
-            ShopEase
-            </a>
+        <AnimatedGradientText >
+        Shop Ease
+      </AnimatedGradientText>
           <div className='hidden lg:block'>
             <ul className='flex items-center gap-4'>
               {MenuLinks.map((data,index)=>(

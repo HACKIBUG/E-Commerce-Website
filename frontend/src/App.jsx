@@ -9,6 +9,8 @@ import Image1 from './assets/hero/headphone.png'
 import Image2 from './assets/category/smartwatch2.png'
 import Products from './components/Products/Products'
 import Blogs from './components/Blogs/Blogs'
+import Partners from './components/Partners/Partners'
+import Footer from './components/Footer/Footer'
 
 
 const BannerData = {
@@ -45,6 +47,8 @@ const App = () => {
     <Products></Products>
     <Banner data={BannerData2}/>
     <Blogs></Blogs>
+    <Partners></Partners>
+    <Footer></Footer>
     </div>
   )
 }

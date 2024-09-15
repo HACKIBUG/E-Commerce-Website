@@ -1,0 +1,31 @@
+/* src/components/magicui/animated-gradient-text.module.css */
+
+/* Define a keyframes animation for the gradient text */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Apply styles to the animated gradient text */
+.animatedGradientText {
+  display: inline-block; /* Ensures the text takes up only the space it needs */
+  background: linear-gradient(90deg,#ADD8E6, #9c40ff, #ffaa40);
+  background-size: 200% 200%; /* Sets the size of the background gradient */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent to show the gradient */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Makes the text bold */
+  animation: gradientAnimation 3s ease infinite; /* Applies animation */
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 600px) {
+  .animatedGradientText {
+    font-size: 1.5rem; /* Smaller font size on smaller screens */
+  }
+}
