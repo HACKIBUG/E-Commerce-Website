@@ -32,11 +32,11 @@ const Footer = () => {
                 </AnimatedGradientText>
                 </a>
                     <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
-                        <li><a href="/#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">Home</a></li>
-                        <li><a href="/#about" class=" text-gray-400 hover:text-gray-900 dark:hover:text-white">Category</a></li>
-                        <li><a href="/#contact" class=" text-gray-400 hover:text-gray-900 dark:hover:text-white">Products</a></li>
-                        <li><a href="/#blog" class=" text-gray-400 hover:text-gray-900 dark:hover:text-white">Blogs</a></li>
-                        <li><a href="#" class=" text-gray-400 hover:text-gray-900 dark:hover:text-white">Partners</a></li>
+                        <li><a href="/#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">Home</a></li>
+                        <li><a href="/#about" class=" text-gray-500 hover:text-gray-900 dark:hover:text-white">Category</a></li>
+                        <li><a href="/#contact" class=" text-gray-500 hover:text-gray-900 dark:hover:text-white">Products</a></li>
+                        <li><a href="/#blog" class=" text-gray-500 hover:text-gray-900 dark:hover:text-white">Blogs</a></li>
+                        <li><a href="#" class=" text-gray-500 hover:text-gray-900 dark:hover:text-white">Partners</a></li>
                     </ul>
                     <div class="flex space-x-10 justify-center items-center mb-14">
                         <a href="#" class="block  text-gray-900 dark:text-gray-50 transition-all duration-500 hover:text-indigo-600 dark:hover:text-indigo-600 ">
