@@ -11,19 +11,22 @@ const BlogData=[
         title: 'How to Choose Perfect smartwatch',
         subtitle: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vel nam, dolorum alias nemo, necessitatibus tenetur odio repellat, sunt quis illum consequatur veniam unde tempore quo! Exercitationem voluptate quo vero.',
         published:"Jan 20,2024 by Dilshad",
-        image:Img1
+        image:Img1,
+        aosDelay:'0',
     },
     {
         title: 'How to Choose Perfect smartwatch',
         subtitle: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vel nam, dolorum alias nemo, necessitatibus tenetur odio repellat, sunt quis illum consequatur veniam unde tempore quo! Exercitationem voluptate quo vero.',
         published:"Jan 20,2024 by Dilshad",
-        image:Img2
+        image:Img2,
+        aosDelay:'200',
     },
     {
         title: 'How to Choose Perfect smartwatch',
         subtitle: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vel nam, dolorum alias nemo, necessitatibus tenetur odio repellat, sunt quis illum consequatur veniam unde tempore quo! Exercitationem voluptate quo vero.',
         published:"Jan 20,2024 by Dilshad",
-        image:Img3
+        image:Img3,
+        aosDelay:'400',
     },
 ]
 
@@ -35,7 +38,10 @@ const Blogs = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7'>
            {
             BlogData.map((data)=>(
-                <div key={data.title} className='bg-white dark:bg-gray-900'>
+                <div 
+                data-aos='fade-up'
+                data-aos-delay={data.aosDelay}
+                key={data.title} className='bg-white dark:bg-gray-900'>
                     <div className='overflow-hidden rounded-2xl mb-2'>
                         <img src={data.image} alt=""  className='w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-300'/>
                     </div>
