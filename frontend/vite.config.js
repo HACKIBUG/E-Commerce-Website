@@ -6,8 +6,10 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: {
+      // eslint-disable-next-line no-undef
       '@': path.resolve(__dirname, './src'),  // Alias '@' to the 'src' directory
     },
   },
   plugins: [react()],
+  base: './ecommerce-website/',
 })
